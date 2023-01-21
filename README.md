@@ -2,11 +2,18 @@
 
 Ultra Light Fast Generic Face Detector 👨‍👩‍👧‍👦🖼
 
+![sample](samples/sample_detected.jpg)
+
+Very fast and quality face detector. Can use CPU, GPU and MPS (Apple M1 ML) providers.
+Work via ONNX model
+
+
 ## Installation
 
 ```bash
 pip install ultralight
 ```
+
 
 ## Usage sample
 
@@ -28,6 +35,14 @@ cv2.waitKey(0)
 ```
 
 This sample can be found [here](samples/sample.py)
+
+
+## Reference
+
+[Github repository of original detector](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB)
+
+[ArXiv paper of original detector](https://arxiv.org/pdf/1905.00641.pdf)
+
 
 ## More
 
