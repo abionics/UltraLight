@@ -12,7 +12,6 @@ def format_image(image: np.ndarray) -> np.ndarray:
 
 
 def box_to_point(box: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    # todo limit (0, width) and (0, height) if needed
     return box[0:2], box[2:4]
 
 

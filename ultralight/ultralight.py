@@ -7,7 +7,7 @@ import onnxruntime as ort
 import requests
 
 MODEL_DEFAULT_PATH = '.models'
-MODEL_URL_TEMPLATE = 'https://github.com/Saadmairaj/models/releases/download/v0.0.1/{}'  # todo my url
+MODEL_URL_TEMPLATE = 'https://github.com/abionics/UltraLight/releases/download/v1.0.0/{}'
 
 SizeType = Literal[320, 640]
 
