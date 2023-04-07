@@ -9,7 +9,7 @@ def main():
     image = cv2.imread('sample.jpg')
 
     detector = UltraLightDetector(providers=['CoreMLExecutionProvider', 'CPUExecutionProvider'])
-    faces, scores = detector.detect(image)
+    faces, scores = detector.detect_one(image)
     print(f'Found {len(faces)} face(s)')
 
     draw_faces(image, faces, scores)

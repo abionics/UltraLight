@@ -1,4 +1,4 @@
-rm -rf dist jsonizer.egg-info
+rm -rf dist *.egg-info
 python3 setup.py sdist
 twine check dist/*
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*

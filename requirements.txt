@@ -1,5 +1,8 @@
-numpy==1.24.1
-opencv-python==4.7.0.68
+numpy==1.24.2
+numexpr==2.8.4
+opencv-python==4.7.0.72
 requests==2.28.2
+tqdm==4.65.0
 onnxruntime==1.13.1
-# onnxruntime-silicon==1.13.1 # For MPS (GPU) in M1 Mac
+# onnxruntime-gpu==1.13.1  # For GPU
+# onnxruntime-silicon==1.13.1  # For MPS (GPU) in M1 Mac

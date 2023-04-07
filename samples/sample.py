@@ -8,10 +8,10 @@ def main():
     image = cv2.imread('sample.jpg')
 
     detector = UltraLightDetector()
-    faces, scores = detector.detect(image)
-    print(f'Found {len(faces)} face(s)')
+    boxes, scores = detector.detect_one(image)
+    print(f'Found {len(boxes)} face(s)')
 
-    draw_faces(image, faces, scores)
+    draw_faces(image, boxes, scores)
     cv2.imshow('result', image)
     cv2.waitKey(0)
 

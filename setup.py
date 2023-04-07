@@ -34,8 +34,10 @@ setup(
     keywords='face detection ai ultra light',
     install_requires=[
         'numpy',
+        'numexpr',
         'opencv-python',
         'requests',
+        'tqdm',
         'onnxruntime',
     ],
     classifiers=[
@@ -51,7 +53,6 @@ setup(
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Scientific/Engineering :: Image Processing',
         'Topic :: Scientific/Engineering :: Image Recognition',
-        'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Typing :: Typed',
     ],

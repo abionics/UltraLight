@@ -25,11 +25,11 @@ from ultralight.utils import draw_faces
 image = cv2.imread('sample.jpg')
 
 detector = UltraLightDetector()
-faces, scores = detector.detect(image)
-print(f'Found {len(faces)} face(s)')
-# >>> Found 5 face(s)
+boxes, scores = detector.detect_one(image)
+print(f'Found {len(boxes)} face(s)')
+# >>> Found 14 face(s)
 
-draw_faces(image, faces, scores)
+draw_faces(image, boxes, scores)
 cv2.imshow('result', image)
 cv2.waitKey(0)
 ```
@@ -39,7 +39,7 @@ This sample can be found [here](samples/sample.py)
 
 ## Reference
 
-[Github repository of original detector](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB)
+[GitHub repository of original detector](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB)
 
 [ArXiv paper of original detector](https://arxiv.org/pdf/1905.00641.pdf)
 
