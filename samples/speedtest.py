@@ -24,7 +24,7 @@ def process(filenames: list[str]) -> tuple[int, float]:
 
 def main():
     batches = [
-        ['input.jpg' for _ in range(PROCESS_IMAGES)]
+        ['sample.jpg' for _ in range(PROCESS_IMAGES)]
         for _ in range(PROCESSES)
     ]
     print(f'Processes: {PROCESSES}, process images: {PROCESS_IMAGES}, batch size: {BATCH_SIZE}')

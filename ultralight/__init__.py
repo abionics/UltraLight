@@ -6,4 +6,4 @@ License: MIT
 
 from ultralight.ultralight import UltraLightDetector
 
-__version__ = '2.0.0'
+__version__ = '2.1.0'

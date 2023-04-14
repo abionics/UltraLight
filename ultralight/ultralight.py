@@ -101,11 +101,10 @@ class UltraLightDetector:
 
     def _preprocess_images(self, images: Sequence[np.ndarray]) -> np.ndarray:
         images = np.asarray([
-            cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            for image in images
-        ])
-        images = np.asarray([
-            cv2.resize(image, self._model_shape)
+            cv2.resize(
+                cv2.cvtColor(image, cv2.COLOR_BGR2RGB),
+                self._model_shape,
+            )
             for image in images
         ])
         images = images.astype(np.float32)  # noqa used in numexpr
