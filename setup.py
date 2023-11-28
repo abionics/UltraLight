@@ -17,7 +17,7 @@ def load_readme() -> str:
 
 
 def read_file(filename: str) -> str:
-    with open(filename) as file:
+    with open(filename, encoding='utf-8') as file:
         return file.read()
 
 
